@@ -1,0 +1,141 @@
+
+ .navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: right;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #eee;
+    color:black;
+}
+#navi a.active {
+  background-color: #eee;
+  color: black;
+}
+nav {
+    float: left;
+    width: 30%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+
+
+article {
+    float: none;
+    padding: 20px;
+    width: 100%;
+    background-color: #f1f1f1;
+    height: 300px; /* only for demonstration, should be removed */
+    overflow: scroll;
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.row {
+    display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+#footerimage img{
+ width: 30px;
+    height: 30px;
+}
+#center h2:hover {
+  text-align: center;
+  border: 3px solid black;
+  padding:4 rem;
+}
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+ body {
+/*    background-image: url("../images/background1.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  section {
+     display: block;
+ }
+ section  {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+.mySlides {display:none;}/*
+#navi {
+  font-family: 'Roboto', sans-serif;
+}*/
+#heading
+{
+    font-family: 'Roboto', sans-serif;
+}
+#bigger {
+  font-family: 'Patua One', cursive;
+}
+#para {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+}
+#para.p{
+  overflow: scroll;
+}
+.checked{
+  color:orange;
+}
+#r{
+  border:1px solid grey;
+  background-color: #eee;
+  padding:10px;
+  margin-left:5px;
+  width:24%;
+}

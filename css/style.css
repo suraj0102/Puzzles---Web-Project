@@ -1,0 +1,72 @@
+body {
+  font-family: sans-serif;
+}
+h1 {
+  text-align: center;
+  color: forestgreen;
+  margin: 30px 0 50px;
+}
+.gallery {
+  margin: 10px 50 px;
+}
+.gallery img {
+  width: 230 px;
+  padding: 5px;
+  filter: grayscale(0);
+  transition: 1s;
+}
+.gallery img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+#pos img{
+  float:right;
+}
+.navbar {
+   overflow: hidden;
+   background-color: #333;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+   float: left;
+   font-size: 16px;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+   background-color: grey;
+}
+#navi a.active {
+ background-color: #5383d3;
+ color: white;
+}
+nav {
+   float: left;
+   width: 30%;
+   height: 300px; /* only for demonstration, should be removed */
+   background: #ccc;
+   padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+   list-style-type: none;
+   padding: 0;
+}
+#heading
+{
+    font-family: 'Roboto', sans-serif;
+}
+#bigger {
+  font-family: 'Patua One', sans-serif;
+}
+#para {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+}

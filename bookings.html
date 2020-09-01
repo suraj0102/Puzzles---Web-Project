@@ -1,0 +1,140 @@
+<html>
+<head>
+			<title>Puzzles Resort</title>
+			<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    	<link rel="stylesheet" href="stylesheetsmain/style.css" />
+			<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  function popup(clicki)
+  {
+    alert("Booking Done Successfully!");
+  }
+  function calc(clicked_id)
+  {
+		var no=parseFloat(document.getElementById("nop").value);
+    if(clicked_id=="fd")
+		{
+			document.getElementById("pr").value=no*2150;
+		}
+		else if (clicked_id=="do") {
+			document.getElementById("pr").value=no*1500;
+		}
+		else if (clicked_id=="fdws") {
+			document.getElementById("pr").value=no*3000;
+		}
+		else if (clicked_id=="tq") {
+			document.getElementById("pr").value=no*1800;
+		}
+		}
+  </script>
+		</head>
+<body>
+<div class="navbar" id="navi">
+	<a href="loginpg.html">AdminLogin</a>
+					<a href="contact.html">Contact</a>
+					<a href="gallery.html">Gallery</a>
+					<a href="amenities.html">Amenities</a>
+					<a href="events.html">Events</a>
+					<a href="packages.html">Packages</a>
+					<a href="activities.html">Activities</a>
+  			<a href="index.html">Home</a>
+
+				<img class="w3-item w3-bar" src="imgs/rlogo.jpg" alt="logo" style="width:200px; margin-left:-0.6rem;margin-top:-0.9rem;margin-bottom:-0.6rem; height:70px">
+			</div>
+<div id="bigger"><h1 align="center"> BOOK HERE </h1></div>
+<form method="post" action="bookings.php" style="margin-left:30px;">
+<br><br><br>
+Name:<input type="text" placeholder="Enter your name" name="name"><br><br>
+Date of visting:<input type="date" name="dov"><br><br>
+Number of people:<input type="number" name="nop" min="1" max="25" id="nop"><br><br>
+<input type="radio" name="package" value="fullday" id="fd" onclick="calc(this.id)">Full Day &nbsp;
+<input type="radio" name="package" value="dayout" id="do" onclick="calc(this.id)">Day Out &nbsp;
+<input type="radio" name="package" value="fulldayws" id="fdws" onclick="calc(this.id)">Full Day with stay &nbsp;
+<input type="radio" name="package" value="three quarters" id="tq" onclick="calc(this.id)">Three Quarters<br><br>
+Conatct Number:<input type="text" name="contno"><br><br>
+Price:<input type="text" name="price" id="pr"><br><br><br>
+<p><b>Payment Details:</b></p><br>
+Card Number:<br><input type="text" name="cardno" placeholder="Enter your card number" pattern="([0-9]{16})"><br><br>
+<input type="text" name="nameofuser" placeholder="Enter name" pattern="^[a-zA-Z]+(([. ][a-zA-Z ])?[a-zA-Z]*)*$"><br><br>
+<input type="text" name="expiry" placeholder="MM/YY" pattern="[0-9][0-9 ][0-9][0-9]">&nbsp;
+<input type="password" name="cvv" placeholder="CVV" pattern="[0-9][0-9][0-9]"><br><br>
+<input type="submit" value="Book Now" id="book" onclick="popup(this.id)">
+</form>
+
+<footer class="footer-distributed">
+
+								    <div class="footer-left">
+
+								      <h3>Puzzles<span>Resort</span></h3>
+											<p class="footer-links">
+												<a href="index.html">Home</a>
+												.
+												<a href="activities.html">Activities</a>
+												.
+												<a href="packages.html">Packages</a>
+												.
+												<a href="events.html">Events</a>
+												.
+												<a href="amenities.html">Amenities</a>
+												.
+												<a href="gallery.html">Gallery</a>
+												.
+												<a href="contact.html">Contact</a>
+														</p>
+
+
+								      <p class="footer-company-name">Puzzles Resort &copy; 2018</p>
+								    </div>
+
+								    <div class="footer-center">
+
+
+
+								      <div>
+								        <i class="fa fa-phone"></i>
+								        <p>+91 9980712345</p>
+								      </div>
+
+								      <div>
+								        <i class="fa fa-envelope"></i>
+								        <p>PuzzlesresortOFFICIAL@gmail.com</p>
+								      </div>
+
+								    </div>
+
+								    <div class="footer-right">
+
+								      <p class="footer-company-about">
+								        <span>About us</span>
+								       We belive in the power of travel-and in helping you make the most of every trip.Our page is your ultimate travel companion.
+								      </p>
+
+								      <div class="footer-icons">
+
+												<a href="#"><i class="fa fa-facebook"></i></a>
+												<a href="#"><i class="fa fa-twitter"></i></a>
+												<a href="#"><i class="fa fa-instagram"></i></a>
+												<a href="#"><i class="fa fa-youtube"></i></a>
+
+
+								      </div>
+
+								    </div>
+
+								  </footer>
+</body>
+</html>
